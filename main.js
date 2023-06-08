@@ -24,8 +24,8 @@ app.on("window-all-closed", () => {
   if (process.platform !== "darwin") app.quit();
 });
 
-  mainWindow.loadURL(
-    isDev
-      ? "http://localhost:3000" // 開発環境の場合
-      : `file://${path.join(__dirname, "../build/index.html")}`, // 本番環境の場合
-  );
+  // mainWindow.loadURL(
+  //   isDev
+  //     ? "http://localhost:3000" // 開発環境の場合
+  //     : `file://${path.join(__dirname, "../build/index.html")}`, // 本番環境の場合
+  // );
